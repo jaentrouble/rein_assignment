@@ -197,7 +197,7 @@ class QN(object):
 
                 # logging stuff
                 if ((t > self.config.learning_start) and (t % self.config.log_freq == 0) and
-                   (t % self.config.learning_freq == 0)):
+                   (t % self.config.learning_freq == 0) and (len(rewards)>0)):
                     self.update_averages(rewards, max_q_values, q_values, scores_eval)
                     exp_schedule.update(t)
                     lr_schedule.update(t)

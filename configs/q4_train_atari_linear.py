@@ -25,10 +25,10 @@ class config():
     soft_epsilon      = 0.05
 
     # nature paper hyper params
-    nsteps_train       = 500000
+    nsteps_train       = 50000
     batch_size         = 32
     buffer_size        = 1000000
-    target_update_freq = 10000
+    target_update_freq = 1000
     gamma              = 0.99
     learning_freq      = 4
     state_history      = 4
@@ -39,4 +39,4 @@ class config():
     eps_begin          = 1
     eps_end            = 0.1
     eps_nsteps         = 1000000
-    learning_start     = 50000
+    learning_start     = 5000
